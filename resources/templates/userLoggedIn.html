@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Home Page</h1>
+   <ul>
+        <li th:each = "users : ${users}" >
+<!--         <table border="1px">
+			<tr>
+				<th>Quiz Id</th>
+				<th>Quiz Title</th>
+				<th>Quiz Description</th>
+			</tr >
+
+		     <tr th:each = "x:${quiz}">
+		          <td>  <span th:text="${x.quizId} "></span></td>
+		          <td>  <span th:text="${x.quizTitle} "></span></td>
+		          <td>  <span th:text="${x.quizDescription} "></span></td>
+		     </tr>
+    	</table>
+-->
+            <div>
+	            <span  th:if="${users.userRole} == teacher">
+
+	             <p><a href="/createNewQuiz">Create Quiz</a></p>
+	            </span>
+            </div>
+            
+            <div>
+            <span  th:if="${users.userRole} == student">
+            
+             <p><a href="/selectquiz">Select Quiz</a></p>
+           
+            </span>
+            </div>
+       
+            </li>
+    </ul>
+</body>
+</html>

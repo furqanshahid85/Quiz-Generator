@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h2>ATTEMPT QUIZ</h2>
+<table border="1px">
+<tr>
+<th>Quiz Id</th>
+<th>Quiz Title</th>
+<th>Quiz Description</th>
+</tr >
+
+     <tr th:each = "x:${quiz}">
+          <td>  <span th:text="${x.quizId} "></span></td>
+          <td>  <span th:text="${x.quizTitle} "></span></td>
+          <td>  <span th:text="${x.quizDescription} "></span></td>
+     </tr>
+    </table>
+    <p><b>Select a Quiz From Above</b></p>
+    <form action="/viewQuestions">
+        <p>Quiz Id: <input type="text"   name = "quizId" value = "" >
+        <input type="submit" value="Attempt"></p>
+    </form>
+    
+    <p><a href="/user?name=student">Go Back</a></p>
+    
+</body>
+</html>

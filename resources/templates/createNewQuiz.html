@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Create quiz</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+
+<body>
+
+<h2>CREATE QUIZ</h2>
+<div class="container">
+    <form action="/savequiz" method ="post">
+	     <table>
+		     <tr>
+		     	<th>Quiz Title:  <input type="text"  th:field="${quiz.quizTitle}" name = "title" value = "" > </th>
+		     </tr>
+		     <tr>
+		     	<th>Quiz Description: <input type="text"  th:field="${quiz.quizDescription}" name = "description" value = "" > </th>
+		     </tr>
+		     <tr>
+		     	<th>Quiz Marks: <input type="text"  th:field="${quiz.quizMarks}" name = "marks" value = "" > </th>
+		     </tr>
+		     <tr>
+		     	<th>Quiz Attempt Time: <input type="text"  th:field="${quiz.quizTime}" name = "time" value = "" > </th>
+		     </tr>
+	      </table>
+	      <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

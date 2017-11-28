@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Add question</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+
+<body>
+
+<h2>CREATE QUESTION</h2>
+<div class="container">
+	    <form action="/storeQuestions">
+		    <table>
+		    	<tr>
+		       		<th>Quiz Id:  <input type="text"  th:field="${questions.quizId}" name = "quizId" value = "" > </th>
+		    	</tr>
+		     	<tr>
+		      	 	<th>Question:  <input type="text"  th:field="${questions.questionStatement}" name = "statement" value = "" > </th>
+		    	</tr>
+		       	<tr>
+		       		<th>Option A: <input type="text"  th:field="${questions.questionOptA}" name = "optA" value = "" > </th>
+		       	</tr>
+		       	<tr>
+		       		<th>Option B: <input type="text"  th:field="${questions.questionOptB}" name = "optB" value = "" > </th>
+		       	</tr>
+		       	<tr>
+		       		<th>Option C: <input type="text"  th:field="${questions.questionOptC}" name = "optC" value = "" > </th>
+		       	</tr>
+		       	<tr>
+		       		<th>Option D: <input type="text"  th:field="${questions.questionOptD}" name = "optD" value = "" > </th>
+		       	</tr>
+		       	<tr>
+		       		<th>Correct Answer: <input type="text"  th:field="${questions.correctAnswer}" name = "correctAns" value = "" > </th>
+		       	</tr>
+		       	<!--
+		       	<tr>
+		       		<th>Marks: <input type="text"  th:field="${questions.questionmarks}" name = "questionmarks" value = "" > </th>
+		       	</tr>
+		       	-->
+		   	</table>
+		   	<input type="submit" value="Save">
+		</form>
+    	<p>Click to go back <a href="/user?name=teacher&password=teacher">here</a></p>
+    </div>
+
+
+
+</body>
+</html>
