@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furqanshahid.quizzer.TeacherHomePageView">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="246dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Teacher Home Page"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <Button
+        android:id="@+id/createQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="58dp"
+        android:text="Create New Quiz"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+</RelativeLayout>

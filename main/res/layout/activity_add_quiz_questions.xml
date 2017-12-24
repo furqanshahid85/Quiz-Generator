@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furqanshahid.quizzer.AddQuizQuestions">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Add Questions for Quiz:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/questionTextView"
+        android:layout_alignBottom="@+id/questionTextView"
+        android:layout_alignStart="@+id/textView10"
+        android:text="Question" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/optATextView"
+        android:layout_alignBottom="@+id/optATextView"
+        android:layout_alignEnd="@+id/textView12"
+        android:text="Option A" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/optBTextView"
+        android:layout_alignBottom="@+id/optBTextView"
+        android:layout_alignStart="@+id/textView13"
+        android:text="Option B" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/optCTextView"
+        android:layout_alignBottom="@+id/optCTextView"
+        android:layout_alignStart="@+id/textView12"
+        android:text="Option C" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/optDTextView"
+        android:layout_alignBottom="@+id/optDTextView"
+        android:layout_alignStart="@+id/textView16"
+        android:text="Option D" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/correctAnsTextView"
+        android:layout_alignBottom="@+id/correctAnsTextView"
+        android:layout_alignStart="@+id/textView17"
+        android:text="Correct Answer" />
+
+    <EditText
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optATextView"
+        android:layout_below="@+id/blankCBox"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/optATextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optBTextView"
+        android:layout_below="@+id/questionTextView"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/optBTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optCTextView"
+        android:layout_below="@+id/optATextView"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/optCTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optDTextView"
+        android:layout_below="@+id/optBTextView"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/optDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/correctAnsTextView"
+        android:layout_below="@+id/optCTextView"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/correctAnsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/saveQuizBtn"
+        android:layout_below="@+id/optDTextView"
+        android:ems="10"
+        android:hint="enter here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:text="Save Question" />
+
+    <CheckBox
+        android:id="@+id/mcqCBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/questionTextView"
+        android:layout_alignParentStart="true"
+        android:text="Mcqs" />
+
+    <CheckBox
+        android:id="@+id/blankCBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:text="Fill in the Blank" />
+
+    <CheckBox
+        android:id="@+id/trueFalseCBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/blankCBox"
+        android:layout_alignBottom="@+id/blankCBox"
+        android:layout_toEndOf="@+id/saveQuizBtn"
+        android:text="True/False" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Select Question Type:" />
+</RelativeLayout>
