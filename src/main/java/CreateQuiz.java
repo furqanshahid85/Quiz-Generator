@@ -30,7 +30,7 @@ public class CreateQuiz extends JFrame implements java.io.Serializable {
 	public static JTextField titleField;
 	private JLabel lblDescription;
 	private JButton btnAddQuestion;
-	private JLabel label;
+	public JLabel label;
 	private JLabel lblTotalMarks;
 	public JTextField quizMarksField;
 	private JLabel lblTimeAllowed;
